@@ -6,9 +6,9 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from src.pipelines.Prediction_pipeline import CustomData, PredictPipeline
 
-apk = Flask(__name__)
+application = Flask(__name__)
 
-application = apk
+application = application
 
 # Route for home page
 
