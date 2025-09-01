@@ -42,8 +42,9 @@ It is an **end-to-end Machine Learning project** that includes data exploration,
 
 ---
 
-## ⚙️ Project Structure
+## 📂 Project Structure
 
+```plaintext
 Project/
 ├── application.py        # Flask app entry point
 ├── requirements.txt      # Dependencies
@@ -72,6 +73,7 @@ Project/
 │   └── home.html
 │
 └── .ebextensions/        # Elastic Beanstalk configs
+```
 
 ---
 
@@ -139,14 +141,14 @@ App will be available at http://127.0.0.1:5000 or http://localhost:5000/
 ## 📷 Screenshots
 
 ### Input Form
-![Index Page](assets\Index.png)
+![Index Page](assets/Index.png)
 
 ### Prediction Page
 ![Main Page](assets/Main.png)
 
 ---
 
-## 🔮 Future Improvements
+## 🔮 Potential Improvements
 - Add deep learning models for score prediction  
 - Deploy using Docker + Kubernetes  
 - Enhance frontend with modern UI framework  
