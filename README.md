@@ -13,7 +13,9 @@ It is an **end-to-end Machine Learning project** that includes data exploration,
 
 <p align="center">
   <a href="http://end-to-end-sp-env.eba-pan9vuxm.ap-south-1.elasticbeanstalk.com/">
-    <img src="https://img.shields.io/badge/🚀%20ElasticBeanstalk-View--App-blue" alt="View App"/>
+    <img src="https://img.shields.io/badge/🚀%20ElasticBeanstalk-View--App-blue" 
+         alt="View App" 
+         width="250"/>
   </a>
 </p>
 
@@ -43,30 +45,33 @@ It is an **end-to-end Machine Learning project** that includes data exploration,
 ## ⚙️ Project Structure
 
 Project/
-│── application.py # Flask app entry point
-│── requirements.txt # Dependencies
-│── setup.py # Setup script
-│── README.md # Documentation
-│── .gitignore # Ignore rules
+├── application.py        # Flask app entry point
+├── requirements.txt      # Dependencies
+├── setup.py              # Setup script
+├── README.md             # Documentation
+├── .gitignore            # Ignore rules
 │
-├── artifact/ # Trained models & preprocessors
-│ ├── model.pkl
-│ ├── preprocessor.pkl
-│ └── datasets...
+├── artifact/             # Trained models & preprocessors
+│   ├── model.pkl
+│   └── preprocessor.pkl
 │
-├── logs/ # Logging
-├── notebook/ # Jupyter notebooks
-│ └── EDA.ipynb
-├── src/ # Source code
-│ ├── exception.py
-│ ├── logger.py
-│ ├── utils.py
-│ ├── components/ # Data ingestion, transformation, trainer
-│ └── pipelines/ # Training & prediction pipelines
-├── templates/ # HTML templates (Flask UI)
-│ ├── index.html
-│ └── home.html
-└── .ebextensions/ # Elastic Beanstalk configs
+├── datasets/             # Datasets
+├── logs/                 # Logging
+├── notebook/             # Jupyter notebooks
+│   └── EDA.ipynb
+│
+├── src/                  # Source code
+│   ├── exception.py
+│   ├── logger.py
+│   ├── utils.py
+│   ├── components/       # Data ingestion, transformation, trainer
+│   └── pipelines/        # Training & prediction pipelines
+│
+├── templates/            # HTML templates (Flask UI)
+│   ├── index.html
+│   └── home.html
+│
+└── .ebextensions/        # Elastic Beanstalk configs
 
 ---
 
@@ -97,9 +102,9 @@ Each model was tuned with a parameter grid, and performance was compared using *
 RandomForestRegressor(min_samples_leaf=4, min_samples_split=5, n_estimators=300)
 ```
 
--R² Score: ~0.83 on the test dataset 🎯
--Models with R² < 0.6 were discarded automatically.
--The chosen model is persisted as artifact/model.pkl and later used by the Flask app for predictions.
+- R² Score: ~0.83 on the test dataset 🎯
+- Models with R² < 0.6 were discarded automatically.
+- The chosen model is persisted as artifact/model.pkl and later used by the Flask app for predictions.
 
 ---
 
@@ -127,17 +132,17 @@ pip install -r requirements.txt
 ```bash
 python application.py
 ```
-App will be available at http://127.0.0.1:5000 (Paste in a Browser window)
+App will be available at http://127.0.0.1:5000 or http://localhost:5000/
 
 ---
 
 ## 📷 Screenshots
 
 ### Input Form
-![Index Page](assets\Screenshot 2025-09-01 195053.png)
+![Index Page](assets\Index.png)
 
 ### Prediction Page
-![Main Page](assets/Screenshot 2025-09-01 195112.png)
+![Main Page](assets/Main.png)
 
 ---
 
