@@ -10,7 +10,7 @@ as gender, ethnicity, parental education, lunch type, test preparation, and prio
 It is an **end-to-end Machine Learning project** that includes data exploration, model training, evaluation, and deployment with Flask and AWS Elastic Beanstalk.
 
 ---
-
+<!--
 <p align="center">
   <a href="http://end-to-end-sp-env.eba-pan9vuxm.ap-south-1.elasticbeanstalk.com/">
     <img src="https://img.shields.io/badge/🚀%20ElasticBeanstalk-View--App-blue" 
@@ -18,7 +18,7 @@ It is an **end-to-end Machine Learning project** that includes data exploration,
          width="250"/>
   </a>
 </p>
-
+-->
 
 
 ---
